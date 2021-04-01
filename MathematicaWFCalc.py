@@ -85,9 +85,3 @@ class MathematicaWFCalc:
             jsn = None
             logging.error(f"JSON parsing failed: {e}")
         return jsn
-
-
-# Example
-calc = MathematicaWFCalc(path="BenderWu_Borel_Script.wls")
-calc.run_wls(params=["o=20", "p=3", "K=6", "G=0.1"])
-print(calc.get_coeff())
